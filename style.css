@@ -9,10 +9,9 @@
 }
 
 body{  
-    min-width: 320px;
-	max-width: 5750px;
-	max-height: 2352px;
-	overflow-x: hidden;
+     max-width: 1920px;
+     min-height: 100vh;
+     overflow-x: hidden;
 }
 
 .container{
