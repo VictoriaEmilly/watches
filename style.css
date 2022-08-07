@@ -348,15 +348,18 @@ footer a:not(:last-child){
     
     .texto h1{
         font-size: 1.5em;
+	 width: 100%;
     }
     .texto h2{
         font-size: 0.9em;
+    	width: 100%;
     }
 
     .texto h3{
         font-size: 1.1em;
         padding: 0;
         margin-top: 50px;
+	width: 100%;
     }
 
     .texto p{
