@@ -140,7 +140,7 @@ button:hover{
 
 .subtopico-img{
     position: absolute;
-    top:60%;
+    top:55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display:flex;
@@ -210,6 +210,13 @@ footer a:not(:last-child){
     body{
         width: 100%;
     }
+	
+    header{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .container{
         overflow-x: hidden;
@@ -218,9 +225,19 @@ footer a:not(:last-child){
     .logo h1{
         font-size: 1.4em;
     }
+	
+     ul{
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        text-align: center;
+        margin: 15px;  
+        padding: 0; 
+    }
 
     li{
         font-size: 1em;
+	padding-right: 20px;
     }
     
     main{
@@ -274,6 +291,7 @@ footer a:not(:last-child){
     .logo img{
         display: block;
         float: left;
+	width:24px;
     }
     .logo h1{
         display: block;
