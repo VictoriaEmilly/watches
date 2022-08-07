@@ -8,11 +8,9 @@
     text-decoration: none;
 }
 
-body{  
-    min-width: 320px;
-	max-width: 5750px;
-	max-height: 2352px;
+body{   
 	overflow-x: hidden;
+    min-height: 100%;
 }
 
 .container{
@@ -140,7 +138,7 @@ button:hover{
 
 .subtopico-img{
     position: absolute;
-    top:60%;
+    top:55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display:flex;
@@ -207,21 +205,42 @@ footer a:not(:last-child){
         margin: 0;
         padding: 0;
     }
+
     body{
         width: 100%;
     }
 
+    header{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .container{
         overflow-x: hidden;
+   
     }
 
     .logo h1{
         font-size: 1.4em;
     }
 
+    ul{
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        text-align: center;
+        margin: 15px;  
+        padding: 0; 
+    }
+
     li{
         font-size: 1em;
+        padding-right: 20px;
     }
+
+    
     
     main{
         width: 100%;
@@ -256,7 +275,7 @@ footer a:not(:last-child){
 }
 
 
-@media screen and (max-width:600px) {
+@media (min-width:320px) and (max-width:600px) {
     
     *{
         margin: 0;
@@ -291,8 +310,20 @@ footer a:not(:last-child){
         gap: 10px;
         text-align: center;
         justify-content: center;
-        width: auto;
-        margin: 10px;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    ul{
+        width: 100%; 
+        
+        margin: 15px;  
+        padding: 0; 
+    }
+
+    li:not(:last-child){
+        padding-right: 15px;
     }
 
     li{
@@ -321,6 +352,7 @@ footer a:not(:last-child){
     .texto{
         width: auto;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -329,15 +361,18 @@ footer a:not(:last-child){
     
     .texto h1{
         font-size: 1.5em;
+        width: 100%;
     }
     .texto h2{
         font-size: 0.8em;
+        width: 100%;
     }
 
     .texto h3{
         font-size: 1.1em;
         padding: 0;
         margin-top: 50px;
+        width: 100%;
     }
 
     .texto p{
