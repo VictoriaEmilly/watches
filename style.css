@@ -8,9 +8,16 @@
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 body{   
 	overflow-x: hidden;
     min-height: 100%;
+=======
+body{  
+     max-width: 1920px;
+     min-height: 100vh;
+     overflow-x: hidden;
+>>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
 }
 
 .container{
@@ -100,6 +107,7 @@ main{
     font-weight: 100;
     font-size: 1.7em;
     letter-spacing: 3px;
+    padding-top: 30px;
 }
 
 .texto h1{
@@ -209,6 +217,13 @@ footer a:not(:last-child){
     body{
         width: 100%;
     }
+	
+    header{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     header{
         width: auto;
@@ -225,6 +240,15 @@ footer a:not(:last-child){
     .logo h1{
         font-size: 1.4em;
     }
+	
+     ul{
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        text-align: center;
+        margin: 15px;  
+        padding: 0; 
+    }
 
     ul{
         display: flex;
@@ -237,7 +261,11 @@ footer a:not(:last-child){
 
     li{
         font-size: 1em;
+<<<<<<< HEAD
         padding-right: 20px;
+=======
+	padding-right: 20px;
+>>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
     }
 
     
@@ -293,6 +321,7 @@ footer a:not(:last-child){
     .logo img{
         display: block;
         float: left;
+	width:24px;
     }
     .logo h1{
         display: block;
@@ -330,7 +359,8 @@ footer a:not(:last-child){
         display: block;
         text-align: center;
         width: auto;
-        font-size: 0.8em;
+        font-size: 0.9em;
+	padding:5px;
     }
 
     header{
@@ -361,22 +391,34 @@ footer a:not(:last-child){
     
     .texto h1{
         font-size: 1.5em;
+<<<<<<< HEAD
         width: 100%;
     }
     .texto h2{
         font-size: 0.8em;
         width: 100%;
+=======
+	 width: 100%;
+    }
+    .texto h2{
+        font-size: 0.9em;
+    	width: 100%;
+>>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
     }
 
     .texto h3{
         font-size: 1.1em;
         padding: 0;
         margin-top: 50px;
+<<<<<<< HEAD
         width: 100%;
+=======
+	width: 100%;
+>>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
     }
 
     .texto p{
-        font-size: 0.7em;
+        font-size: 0.9em;
         margin: 0;
         width: 100%;
         text-align: normal;
