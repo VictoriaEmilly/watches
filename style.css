@@ -8,16 +8,10 @@
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 body{   
 	overflow-x: hidden;
-    min-height: 100%;
-=======
-body{  
-     max-width: 1920px;
-     min-height: 100vh;
-     overflow-x: hidden;
->>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
+    min-height: 100vh;
+    width: 100%;
 }
 
 .container{
@@ -261,15 +255,10 @@ footer a:not(:last-child){
 
     li{
         font-size: 1em;
-<<<<<<< HEAD
         padding-right: 20px;
-=======
-	padding-right: 20px;
->>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
+	    padding-right: 20px;
     }
 
-    
-    
     main{
         width: 100%;
         padding: 10px 10px 40px 10px;
@@ -318,11 +307,13 @@ footer a:not(:last-child){
         margin: 0%;
         padding: 0;
     }
+
     .logo img{
         display: block;
         float: left;
-	width:24px;
+	    width:24px;
     }
+
     .logo h1{
         display: block;
         float: left;
@@ -345,8 +336,7 @@ footer a:not(:last-child){
     }
 
     ul{
-        width: 100%; 
-        
+        width: 100%;    
         margin: 15px;  
         padding: 0; 
     }
@@ -360,7 +350,7 @@ footer a:not(:last-child){
         text-align: center;
         width: auto;
         font-size: 0.9em;
-	padding:5px;
+	    padding:5px;
     }
 
     header{
@@ -391,30 +381,24 @@ footer a:not(:last-child){
     
     .texto h1{
         font-size: 1.5em;
-<<<<<<< HEAD
         width: 100%;
     }
     .texto h2{
         font-size: 0.8em;
         width: 100%;
-=======
-	 width: 100%;
+	     width: 100%;
     }
     .texto h2{
         font-size: 0.9em;
     	width: 100%;
->>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
     }
 
     .texto h3{
         font-size: 1.1em;
         padding: 0;
         margin-top: 50px;
-<<<<<<< HEAD
         width: 100%;
-=======
-	width: 100%;
->>>>>>> 11fd516d29050cb8649c32a8d2c8fb4eb80b0bd9
+	    width: 100%;
     }
 
     .texto p{
