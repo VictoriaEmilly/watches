@@ -180,15 +180,13 @@ footer{
 }
 
 footer p{
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding-bottom: 0.5%;
 }
 
 footer a{
     color: #e8c573;
-    text-decoration: underline;
     padding-left: 5px;
-    font-size: 0.8em;
 }
 
 footer a:not(:last-child){
