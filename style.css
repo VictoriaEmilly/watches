@@ -486,12 +486,8 @@ footer a:not(:last-child){
   }
 
   footer p{
-    margin: 0;
-}
-  footer {
     margin: 0 3%;
 }
-
 	.redes{
     margin: 5px;
   } 
