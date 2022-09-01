@@ -243,7 +243,7 @@ footer a:not(:last-child){
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
     margin-top: 10px;  
   }
 
@@ -281,10 +281,10 @@ footer a:not(:last-child){
     margin: 0;
     padding: 40px 0;
     list-style: none;
-    background: rgba(8, 8, 8, 0.952);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+    background: rgb(8, 8, 8);
     transition-duration: .25s;
-    padding-top: 10%;
+    padding-top: 3%;
+    z-index: 4;
   }
   
   .menu li a{
@@ -303,6 +303,9 @@ footer a:not(:last-child){
     color: #ffd778;
   }
  
+  footer{
+    margin-top: 10%;
+  }
 }
 
 @media screen and (max-width:768px) {
