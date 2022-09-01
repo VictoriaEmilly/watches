@@ -20,7 +20,7 @@ body{
   background-image: url('imagens/fundo2.jpg');
   background-size: cover;
   font-family: 'Roboto', sans-serif;
-  width: 100%;
+  width: 100vw;
 	margin: 0;
   height: auto;
   font-size: 20px;
@@ -36,7 +36,7 @@ header{
   width: 100%;
 }
 
-ul{
+.menu{
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -199,6 +199,112 @@ footer a:not(:last-child){
   padding-bottom: 5px;
 }
 
+#menu-toggle, .menu-btn{
+  display: none;
+}
+
+@media screen and (max-width:999px) {
+  .container{
+    overflow-x: hidden!important;
+  }
+  .mobile-menu{
+    display: block;
+  }
+
+  .menu-main{
+    display: none;
+  }
+
+  #menu-toggle{
+    opacity: 0;
+  }
+  #menu-toggle:checked + .menu-btn > span{
+    transform: rotate(45deg);
+  }
+  
+  #menu-toggle:checked +.menu-btn >span::before{
+    top: 0;
+    transform: rotate(0deg);
+  }
+  
+  #menu-toggle:checked + .menu-btn > span::after{
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~.menu{
+    right: 0 !important;
+  }
+  
+  .menu-btn{
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 10px;  
+  }
+
+  .menu-btn > span, 
+  .menu-btn > span::before,
+  .menu-btn > span::after{
+    margin-top: 5%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #e8c573;
+    transition-duration: .25s;
+  }
+
+  .menu-btn > span::before{
+    content: '';
+    top: -8px;
+  }
+
+  .menu-btn > span::after{
+    content: '';
+    top: 5px
+  }
+
+  .menu{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+    height: 50%;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 40px 0;
+    list-style: none;
+    background: rgba(8, 8, 8, 0.952);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    padding-top: 10%;
+  }
+  
+  .menu li a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    transition-duration: .25s;
+    padding: 10px;   
+    width: 100%;    
+  }
+
+  .menu li a:hover{
+    color: #ffd778;
+  }
+ 
+}
+
 @media screen and (max-width:768px) {
 
   *{
@@ -209,53 +315,15 @@ footer a:not(:last-child){
   body{
     width: 100%;
   }
-	
-  header{
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  
+  .menu-btn{
+    right: 40px;
   }
-
-  header{
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-	}
-
-	.container{
-    overflow-x: hidden;
-	}
 
 	.logo h1{
       font-size: 1.4em;
   }
 	
-  ul{
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-align: center;
-    margin: 15px;  
-    padding: 0; 
-  }
-
-  ul{
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-align: center;
-    margin: 15px;  
-    padding: 0; 
-    }
-
-  li{
-    font-size: 1em;
-    padding-right: 20px;
-		padding-right: 20px;
-  }
-
   main{
     width: 100%;
     padding: 10px 10px 40px 10px;
@@ -302,7 +370,7 @@ footer a:not(:last-child){
   }
 
   .logo{
-    margin: 0%;
+    margin: 0;
     padding: 0;
   }
 
@@ -318,41 +386,17 @@ footer a:not(:last-child){
     font-size: 1.2em;
   }
 
-  .container{
-    overflow-x: hidden;
-  }
-
-  ul{
-    display:flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    margin: 5px;
-    padding: 5px;
-  }
-
-  ul{
-    width: 100%;    
-    margin: 15px;  
-    padding: 0; 
-  }
-
-  li:not(:last-child){
-    padding-right: 15px;
-  }
-
-  li{
-    display: block;
-    text-align: center;
-    width: auto;
-    font-size: 0.9em;
-		padding:5px;
-  }
-
   header{
     width: auto;
+  }
+
+  .menu{
+    width: 50vw;
+    padding-top: 23%;
+  }
+
+  .menu-btn{
+    right: 30px;
   }
 
   main{
